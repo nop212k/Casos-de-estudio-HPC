@@ -35,7 +35,7 @@ gcc -O1 -o "$DIR/jac_O1" jacobis.c -lm
 gcc -O2 -o "$DIR/jac_O2" jacobis.c -lm
 gcc -O3 -o "$DIR/jac_O3" jacobis.c -lm
 gcc -Ofast -march=native -ffast-math -o "$DIR/jac_Ofast" jacobis.c -lm
-gcc -O0 -o "$DIR/jac_cache" jacobic.c -lm
+gcc -O3 -march=native -o "$DIR/jac_cache" jacobic.c -lm
 gcc -O2 -o "$DIR/jac_hilos" jacobih.c -lm -lpthread
 gcc -O2 -o "$DIR/jac_procs" jacobip.c -lm
 
