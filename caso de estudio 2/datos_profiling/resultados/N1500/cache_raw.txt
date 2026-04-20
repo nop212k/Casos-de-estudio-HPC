@@ -1,0 +1,10 @@
+==1683== Cachegrind, a high-precision tracing profiler
+==1683== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==1683== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==1683== Command: ./matmul 1500
+==1683== 
+==1683== brk segment overflow in thread #1: can't grow to 0x4843000
+==1683== (see section Limitations in user manual)
+==1683== NOTE: further instances of this message will not be shown
+==1683== 
+==1683== I refs:        27,348,339,452

@@ -1,0 +1,70 @@
+--------------------------------------------------------------------------------
+-- Metadata
+--------------------------------------------------------------------------------
+Invocation:       /usr/bin/cg_annotate resultados/N3000/cachegrind.out
+Command:          ./matmul 3000
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Threshold:        0.1%
+Annotation:       on
+
+--------------------------------------------------------------------------------
+-- Summary
+--------------------------------------------------------------------------------
+Ir______________________ 
+
+217,389,920,910 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+-- File:function summary
+--------------------------------------------------------------------------------
+  Ir____________________________  file:function
+
+< 216,360,192,465 (99.5%, 99.5%)  ???:
+  216,072,045,033 (99.4%)           multiplicarMatrices
+      252,030,038  (0.1%)           llenarMatrizAleatoria
+
+<     503,425,567  (0.2%, 99.8%)  ./stdlib/./stdlib/random_r.c:
+      503,419,355  (0.2%)           random_r
+
+<     414,000,020  (0.2%, 99.9%)  ./stdlib/./stdlib/random.c:
+      414,000,000  (0.2%)           random
+
+--------------------------------------------------------------------------------
+-- Function:file summary
+--------------------------------------------------------------------------------
+  Ir____________________________  function:file
+
+> 216,072,045,033 (99.4%, 99.4%)  multiplicarMatrices:???
+
+>     503,419,355  (0.2%, 99.6%)  random_r:./stdlib/./stdlib/random_r.c
+
+>     414,000,000  (0.2%, 99.8%)  random:./stdlib/./stdlib/random.c
+
+>     252,030,038  (0.1%, 99.9%)  llenarMatrizAleatoria:???
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./stdlib/./stdlib/random.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./stdlib/./stdlib/random.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./stdlib/./stdlib/random_r.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./stdlib/./stdlib/random_r.c
+
+--------------------------------------------------------------------------------
+-- Annotation summary
+--------------------------------------------------------------------------------
+Ir_____________________ 
+
+              0            annotated: files known & above threshold & readable, line numbers known
+              0            annotated: files known & above threshold & readable, line numbers unknown
+              0          unannotated: files known & above threshold & two or more non-identical
+    917,425,587  (0.4%)  unannotated: files known & above threshold & unreadable 
+    112,302,858  (0.1%)  unannotated: files known & below threshold
+216,360,192,465 (99.5%)  unannotated: files unknown
+

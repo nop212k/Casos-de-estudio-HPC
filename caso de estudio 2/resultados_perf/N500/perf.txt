@@ -1,0 +1,60 @@
+--- RUN 1 ---
+event syntax error: 'topdown-retiring/metric-id=topdown!1retiring/,TOPDOWN.SLOTS/metric-id=TOPDOWN.SLOTS/,topdown-fe-bound/metric-id=topd..'
+                     \___ Bad event or PMU
+
+Unable to find PMU or event on a PMU of 'topdown-retiring'
+
+ Performance counter stats for './matmul':
+
+          99397066      task-clock                       #    0.997 CPUs utilized             
+                 0      context-switches                 #    0.000 /sec                      
+                 0      cpu-migrations                   #    0.000 /sec                      
+               807      page-faults                      #    8.119 K/sec                     
+   <not supported>      cycles                                                                
+
+       0.099744961 seconds time elapsed
+
+       0.099771000 seconds user
+       0.000000000 seconds sys
+
+
+--- RUN 2 ---
+event syntax error: 'topdown-retiring/metric-id=topdown!1retiring/,TOPDOWN.SLOTS/metric-id=TOPDOWN.SLOTS/,topdown-fe-bound/metric-id=topd..'
+                     \___ Bad event or PMU
+
+Unable to find PMU or event on a PMU of 'topdown-retiring'
+
+ Performance counter stats for './matmul':
+
+          99218206      task-clock                       #    0.997 CPUs utilized             
+                 0      context-switches                 #    0.000 /sec                      
+                 0      cpu-migrations                   #    0.000 /sec                      
+               806      page-faults                      #    8.124 K/sec                     
+   <not supported>      cycles                                                                
+
+       0.099514922 seconds time elapsed
+
+       0.098526000 seconds user
+       0.001005000 seconds sys
+
+
+--- RUN 3 ---
+event syntax error: 'topdown-retiring/metric-id=topdown!1retiring/,TOPDOWN.SLOTS/metric-id=TOPDOWN.SLOTS/,topdown-fe-bound/metric-id=topd..'
+                     \___ Bad event or PMU
+
+Unable to find PMU or event on a PMU of 'topdown-retiring'
+
+ Performance counter stats for './matmul':
+
+          99456686      task-clock                       #    0.996 CPUs utilized             
+                 0      context-switches                 #    0.000 /sec                      
+                 0      cpu-migrations                   #    0.000 /sec                      
+               807      page-faults                      #    8.114 K/sec                     
+   <not supported>      cycles                                                                
+
+       0.099821136 seconds time elapsed
+
+       0.097812000 seconds user
+       0.001996000 seconds sys
+
+
